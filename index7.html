@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function clickme() {
+        const num1 = document.getElementById("num1").value;
+        const num2 = document.getElementById("num2").value;
+        const num3 = document.getElementById("num3").value;
+        const num4 = document.getElementById("num4").value;
+        const result=(Number(num1)* Number(num2)) + (Number(num3)* Number(num4));
+        document.getElementById("total").value="$" + result;
+      }
+    </script>
+  </head>
+  <body>
+    <p id="p1">Payment</p>
+    <form>
+      <label for="num1">Item1</label>
+      <input type="number1" id="num1" name="num1" />
+      <label for="num2">$</label>
+      <input type="number2" id="num2" name="num2" />
+      <br />
+      <label for="num2">Item2</label>
+      <input type="number3" id="num3" name="num3" />
+      <label for="num4">$</label>
+      <input type="number4" id="num4" name="num4" />
+      <br />
+      <input type="button" value="Click" id="btn1" onclick="clickme()" />
+    </form>
+ 
+      <input type="text" id="total" name="total">
+   
+  </body>
+</html>

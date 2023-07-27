@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+   function add(){
+
+    
+const num1=document.getElementById("num1").value;
+const num2=document.getElementById("num2").value;
+const result=Number(num1)+ Number(num2);
+document.write(result);
+}
+function sub(){
+
+  const num1=document.getElementById("num1").value;
+const num2=document.getElementById("num2").value;
+const result=Number(num1) -Number(num2);
+document.write(result);
+}
+
+  </script>
+</head>
+<body>
+  <form action="">
+    <label for="num1">Num1</label>
+    <input type="number1" id="num1" name="num1">
+    <br>
+    <label for="num2">Num2</label>
+    <input type="number2" id="num2" name="num2">
+    <br>
+    <input type="button" value="Add" onclick="add()">
+    <input type="button" value="submit" onclick="sub()">
+  </form>
+</body>
+</html>
