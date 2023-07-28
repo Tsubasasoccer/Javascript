@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+
+      function myfunction()
+
+      {
+		var rem, temp, final = 0;
+		var number = Number(document.getElementById("txt1").value);
+
+		temp = number;//121
+		while(number>0)
+		{
+			rem = number%10;//121 = 1,2
+			number = parseInt(number/10);//12,1
+			final = final*10+rem;// =1//1*10+2=12j
+		}
+		if(final==temp)
+		{
+			document.write("The inputed number is Palindrome");
+		}
+		else
+		{
+			document.write("The inputted number is not palindrome");
+		}
+	}
+      
+    
+    </script>
+  </head>
+  <body>
+    <form>
+      <label>Enter Number</label>
+      <input type="text" id="txt1" name="txturl" />
+      <br />
+      <input type="button" id="btn1" value="submit" onclick="myfunction()" />
+    </form>
+  </body>
+</html>

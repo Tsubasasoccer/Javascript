@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function myfunction() {
+      var a =document.getElementById("num1").value;
+      if(a==''){
+        document.write("Enter some value in the Year field");
+      }
+      if(a>0 && a%4 ===0){
+        document.write(a+" is leap year")
+    }else{
+      document.write(a+" is not leap year");
+    }
+        
+      
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      <label>Enter a year</label>
+      <input type="number" id="num1" name="txturl" />
+ 
+      <input type="button" id="btn1" value="submit" onclick="myfunction()" />
+    </form>
+  </body>
+</html>
